@@ -1,0 +1,18 @@
+server:
+  #设置端口号
+  error:
+    path: 8080
+  #项目请求地址
+  servlet:
+    context-path: /ssm
+
+  #设置mysql jdbc 连接参数
+spring:
+  datasource:
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/t285
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: com.yidu.SsmDemo006.bean
+  mapper-locations: classpath:/mapper/*.xml
